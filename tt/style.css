@@ -1,0 +1,57 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	font-family: helvetica;
+	background-color: #ffffff;
+	text-align: center;
+	color: #aaaaaa;
+}
+a {
+	color: #aaaaaa;
+	text-decoration: none;
+}
+a:hover {
+	color: #444444;
+	text-decoration: none;
+}
+.uschrift {
+	font-size: 30px;
+	color: #bbbbbb;
+}
+.uschrift2 {
+	font-size: 27px;
+}
+.uschrift3{
+	font-size: 20px;
+}
+.willkommen{
+	color: #aacccc;
+	font-size: 27px;
+	
+}
+.konzept{
+	color: #00cc99;
+	
+}
+.sprechstunden{
+	color: #339933;
+	
+}
+.anfahrt{
+	color: #ff3366;
+	
+}
+.wartezimmer{
+	color: #0066cc;
+	
+}
+.galerie{
+	color: #6633cc;
+}
+
+#layerpraxis
+{ height: 60px; width: 370px; left: 320px; top: 40px; position: absolute; visibility: visible; }
+
+
+
