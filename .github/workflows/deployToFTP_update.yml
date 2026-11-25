@@ -1,8 +1,7 @@
-name: Deploy to FTP
+name: Deploy to FTP (update only!)
 
 on:
-  push:
-    branches: [main]
+  workflow_dispatch
 
 jobs:
   deploy:
@@ -11,7 +10,7 @@ jobs:
       - name: Fetch code
         uses: actions/checkout@v4
 
-      - name: Upload to FTP (delete all files first!)
+      - name: Upload to FTP (update only!)
         uses: SamKirkland/FTP-Deploy-Action@v4.4.0
         with:
           server: ${{ secrets.FTP_SERVER }}
@@ -21,4 +20,4 @@ jobs:
           port: 21
           server-dir: /
           local-dir: ./
-          dangerous-clean-slate: true
+          dangerous-clean-slate: false
